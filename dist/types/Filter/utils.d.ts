@@ -1,0 +1,11 @@
+import { FilterData, FilterDetailedOptions, FilterInput, OnFilterChangeOpts } from "./types";
+export declare function getFilterName(name: string, options: FilterDetailedOptions): string;
+export declare function getAvailableFilterGroups(filterData: FilterData[]): Array<Record<"name" | "label", string>>;
+export declare function getAvailableFilters(filterData: FilterData[]): Array<Record<"name" | "label", string>>;
+export declare function getActiveFilters(filterData: FilterData[]): FilterData[];
+export declare function validate(filterData: FilterData[]): void;
+export declare function register(filterData: FilterData[], name: string, label: string, initial: FilterInput[], options: FilterDetailedOptions): FilterData[];
+export declare function change(filterData: FilterData[], name: string, value: string | string[], opts?: OnFilterChangeOpts): FilterData[];
+export declare function toggle(filterData: FilterData[], name: string): FilterData[];
+export declare function toggleRange(filterData: FilterData[], name: string): FilterData[];
+export declare function swap(filterData: FilterData[], previousFilterName: string, nextFilterName: string): FilterData[];

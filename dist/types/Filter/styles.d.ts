@@ -1,0 +1,2 @@
+declare const useStyles: (props?: any) => import("@material-ui/styles").ClassNameMap<"filter" | "bar" | "menuContent" | "menuHeader" | "menuPaper" | "filterOptions" | "filterChip" | "filterChipContainer" | "filterDeleteContainer" | "filterDelete" | "filterName" | "filterValue" | "filterRange" | "filterInputInner" | "filterMultipleValueInputInner" | "filterConjunction" | "filterValueCheckbox" | "filterValueSelected" | "filterRangeLabel" | "filterRangeValueContainer" | "barAddBtn" | "selectPaper">;
+export default useStyles;

@@ -1,0 +1,12 @@
+import { Meta, Story } from "@storybook/react";
+export declare const Info: Story;
+export declare const Warn: Story;
+export declare const Success: Story;
+export declare const Error: Story;
+export declare const WithClose: Story;
+export declare const WithContent: Story;
+export declare const WithContentAndClose: Story;
+export declare const Custom: Story;
+export declare const WithoutTitle: Story;
+declare const _default: Meta<import("@storybook/react").Args>;
+export default _default;
