@@ -1,10 +1,8 @@
 import clsx from "clsx";
 import React from "react";
 
-import { Logo } from "../icons/Logo";
-import { LogoDark } from "../icons/LogoDark";
 import { localStorageKeys } from "../localStorageKeys";
-import { makeStyles, useTheme } from "../theme";
+import { makeStyles } from "../theme";
 import useLocalStorage from "../tools/useLocalStorage";
 import { ExpandButton } from "./ExpandButton";
 import { MenuItem, menuWidth, shrunkMenuWidth } from "./MenuItem";
@@ -63,7 +61,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
     false.toString()
   );
   const isShrunk = isShrunkStr === "true";
-  const { themeType } = useTheme();
 
   const Link = linkComponent ?? "a";
 
@@ -75,7 +72,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     >
       <div className={classes.float}>
         <Link href={logoHref} className={classes.logo}>
-          {!!logo ? logo : themeType === "dark" ? <LogoDark /> : <Logo />}
+          {!!logo ? logo : "LOGO"}
         </Link>
         {menuItems.map((menuItem) =>
           linkComponent ? (
