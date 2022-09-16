@@ -21,6 +21,7 @@ export const SidebarDrawer: React.FC<SideBarDrawerProps> = ({
   onMenuItemClick,
   linkComponent,
   logoHref,
+  logo,
 }) => {
   const [isOpened, setOpened] = React.useState(false);
   const classes = useStyles({});
@@ -72,7 +73,7 @@ export const SidebarDrawer: React.FC<SideBarDrawerProps> = ({
           >
             <div className={classes.content}>
               <Link href={logoHref} className={classes.logo}>
-                {themeType === "dark" ? <LogoDark /> : <Logo />}
+                {!!logo ? logo : themeType === "dark" ? <LogoDark /> : <Logo />}
               </Link>
               {menuItems.map((menuItem) => (
                 <MenuItemBtn
