@@ -5,14 +5,13 @@ import React from "react";
 import { useTheme } from "..";
 import useStyles from "./styles";
 
-export type PillColor = "error" | "warning" | "success" | "info";
+export type PillColor = "error" | "warning" | "success" | "info" | "generic";
 
 export interface PillProps
   extends Omit<
     ChipProps,
     | "onDelete"
     | "avatar"
-    | "icon"
     | "disabled"
     | "deleteIcon"
     | "color"
@@ -42,6 +41,7 @@ export const Pill = React.forwardRef<HTMLDivElement, PillProps>(
             [classes.warning]: color === "warning",
             [classes.success]: color === "success",
             [classes.info]: color === "info",
+            [classes.generic]: color === "generic",
             [classes.dark]: themeType === "dark",
             [classes.outlined]: outlined,
             [classes.small]: size === "small",

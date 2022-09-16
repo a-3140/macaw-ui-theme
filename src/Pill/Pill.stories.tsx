@@ -3,6 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import clsx from "clsx";
 import React from "react";
 
+import { CopyIcon } from "../icons";
 import { Decorator, GuideDecorator } from "../utils/Decorator";
 import useGuideStyles from "../utils/guideStyles";
 import { Pill, PillProps } from "./Pill";
@@ -12,7 +13,9 @@ const labels = {
   warning: "Warning",
   success: "Success",
   info: "Info",
-};
+  generic: "Generic",
+  icon: "With icon",
+} as const;
 
 const PillGroup: React.FC<PillProps> = (props) => (
   <>
@@ -50,6 +53,8 @@ const DefaultStory: React.FC = () => {
           <PillGroup color="warning" label={labels.warning} />
           <PillGroup color="success" label={labels.success} />
           <PillGroup color="info" label={labels.info} />
+          <PillGroup color="generic" label={labels.generic} />
+          <PillGroup icon={<CopyIcon />} color="generic" label={labels.icon} />
         </div>
       </div>
     </div>
@@ -83,6 +88,13 @@ const SmallStory: React.FC = () => {
           <PillGroup size="small" color="warning" label={labels.warning} />
           <PillGroup size="small" color="success" label={labels.success} />
           <PillGroup size="small" color="info" label={labels.info} />
+          <PillGroup size="small" color="generic" label={labels.generic} />
+          <PillGroup
+            size="small"
+            icon={<CopyIcon />}
+            color="generic"
+            label={labels.icon}
+          />
         </div>
       </div>
     </div>
