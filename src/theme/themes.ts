@@ -20,8 +20,8 @@ export const dark: SaleorThemeColors = {
   },
   autofill: "#5D5881",
   background: {
-    default: "#222431",
-    paper: "#34384B",
+    default: "rgba(34, 36, 49, 1)",
+    paper: "rgba(52, 56, 75, 1)",
   },
   checkbox: {
     default: "#FFFFFF",
@@ -31,7 +31,6 @@ export const dark: SaleorThemeColors = {
     default: "#202124",
     disabled: "rgba(32, 33, 36, 0.6)",
   },
-
   active: {
     1: "#3EA3FF",
     2: "#388AD6",
@@ -40,11 +39,12 @@ export const dark: SaleorThemeColors = {
     5: "#283E5A",
   },
   main: {
-    1: "#FAFAFA",
-    2: "rgba(250, 250, 250, 0.8)",
-    3: "rgba(250, 250, 250, 0.6)",
-    4: "rgba(250, 250, 250, 0.4)",
-    5: "rgba(250, 250, 250, 0.1)",
+    1: "rgba(255, 255, 255, 1)",
+    2: "rgba(146, 148, 161, 1)",
+    3: "rgba(118, 120, 135, 1)",
+    4: "rgba(91, 93, 109, 1)",
+    5: "rgba(64, 66, 82, 1)",
+    6: "rgba(38, 40, 55, 1)",
   },
   fail: {
     verydark: "#9F2E2E",
@@ -71,7 +71,7 @@ export const dark: SaleorThemeColors = {
     light: "#D2F6FE",
   },
   errorAction: {
-    1: "#EB2B59",
+    1: "rgba(235, 43, 89, 1)",
     2: "rgba(235, 43, 89, 0.8)",
     3: "rgba(235, 43, 89, 0.6)",
     4: "rgba(235, 43, 89, 0.4)",
@@ -79,11 +79,14 @@ export const dark: SaleorThemeColors = {
   },
   generic: {
     light: "#F1F1F1",
-    mid: "#EAEAEA",
+    mid: "#5B5D6D",
     dark: "#7C7F7F",
     verydark: "#252929",
   },
 
+  border: {
+    paper: "#26293A",
+  },
   disabled: "#5D6D83",
   paperBorder: "#252728",
   theme: "dark",
@@ -108,7 +111,7 @@ export const light: SaleorThemeColors = {
   },
   autofill: "#f4f6c5",
   background: {
-    default: "#EFF5F8",
+    default: "#FAFBFA",
     paper: "#FFFFFF",
   },
   checkbox: {
@@ -119,20 +122,20 @@ export const light: SaleorThemeColors = {
     default: "#C8C8C8",
     disabled: "#C0CFE2",
   },
-
   active: {
-    1: "#056DFF",
-    2: "#378AFF",
-    3: "#68A7FF",
-    4: "#C1DBFF",
-    5: "#E6F0FF",
+    1: "rgba(5, 109, 255, 1)",
+    2: "rgba(55, 138, 255, 1)",
+    3: "rgba(104, 167, 255, 1)",
+    4: "rgba(193, 219, 255, 1)",
+    5: "rgba(230, 240, 255, 1)",
   },
   main: {
-    1: "#28234A",
-    2: "rgba(40, 35, 74, 0.8)",
-    3: "rgba(40, 35, 74, 0.6)",
-    4: "rgba(40, 35, 74, 0.4)",
-    5: "rgba(40, 35, 74, 0.1)",
+    1: "rgba(37, 41, 41, 1)",
+    2: "rgba(81, 84, 84, 1)",
+    3: "rgba(124, 127, 127, 1)",
+    4: "rgba(168, 169, 169, 1)",
+    5: "rgba(211, 212, 212, 1)",
+    6: "rgba(233, 234, 234, 1)",
   },
   fail: {
     verydark: "#9F2E2E",
@@ -172,7 +175,10 @@ export const light: SaleorThemeColors = {
     verydark: "#252929",
   },
 
-  disabled: "#C2D1E4",
+  border: {
+    paper: "rgba(37, 41, 41, 0.1)",
+  },
+  disabled: "rgba(194, 209, 228, 1)",
   paperBorder: "#EAEAEA",
   theme: "light",
 };

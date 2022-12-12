@@ -37,3 +37,5 @@ export * from "./Indicator";
 export * from "./SwitchSelector";
 export * from "./Autocomplete";
 export * from "./MultipleValueAutocomplete";
+export * from "./Avatar";
+export * from "./Accordion";

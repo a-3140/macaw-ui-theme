@@ -1,5 +1,4 @@
-import { fade } from "@material-ui/core/styles";
-
+import { alpha } from "@material-ui/core/styles";
 import { makeStyles } from "../theme";
 
 const useStyles = makeStyles(
@@ -9,13 +8,14 @@ const useStyles = makeStyles(
         minWidth: "unset",
       },
       "&.Mui-selected": {
-        background: theme.palette.secondary.main,
-        color: theme.palette.primary.main,
+        background: theme.palette.saleor.generic.mid,
+        color: theme.palette.saleor.main[1],
       },
       "&:hover": {
-        background: fade(theme.palette.secondary.main, 0.6),
+        background: alpha(theme.palette.saleor.generic.mid, 0.6),
       },
-      borderRadius: 8,
+      color: theme.palette.saleor.main[1],
+      borderRadius: 4,
       minHeight: 40,
       padding: theme.spacing(1, 2),
       textTransform: "unset",
