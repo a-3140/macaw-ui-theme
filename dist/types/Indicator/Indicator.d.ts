@@ -1,7 +1,7 @@
 import React from "react";
-export declare type IndicatorIcon = "warning" | "error" | "success" | "fail";
-export declare type IndicatorSize = "regular" | "small";
-export declare type IndicatorCombinations = `${IndicatorIcon}-${IndicatorSize}`;
+export type IndicatorIcon = "warning" | "error" | "success" | "fail";
+export type IndicatorSize = "regular" | "small";
+export type IndicatorCombinations = `${IndicatorIcon}-${IndicatorSize}`;
 export interface IndicatorProps {
     icon: IndicatorIcon;
     variant?: "outline" | "filled" | "text" | "icon";

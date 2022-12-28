@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export declare type Position = Record<"x" | "y", number>;
+export type Position = Record<"x" | "y", number>;
 export declare function isScrolledToBottom(anchor: HTMLElement, position: Position, offset?: number): boolean | undefined;
 export declare function isScrolledToTop(anchor: HTMLElement, position: Position, offset?: number): boolean | undefined;
 export interface UseElementScrollOpts<T extends HTMLElement> {

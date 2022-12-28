@@ -11,5 +11,5 @@ export interface PillLinkTypeMap<P = {}, D extends React.ElementType = "a"> {
     classKey: never;
     defaultComponent: D;
 }
-export declare type PillLinkProps<D extends React.ElementType = PillLinkTypeMap["defaultComponent"], P = {}> = OverrideProps<PillLinkTypeMap<P, D>, D>;
+export type PillLinkProps<D extends React.ElementType = PillLinkTypeMap["defaultComponent"], P = {}> = OverrideProps<PillLinkTypeMap<P, D>, D>;
 export declare const PillLink: OverridableComponent<PillLinkTypeMap<{}, "a">>;

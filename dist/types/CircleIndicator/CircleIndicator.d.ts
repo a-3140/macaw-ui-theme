@@ -1,6 +1,6 @@
 import React from "react";
 import { PillColor } from "../Pill";
-export declare type CircleIndicatorColor = PillColor;
+export type CircleIndicatorColor = PillColor;
 export interface CircleIndicatorProps {
     color: CircleIndicatorColor;
 }

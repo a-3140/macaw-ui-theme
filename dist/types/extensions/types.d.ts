@@ -7,7 +7,7 @@ export declare enum ExtensionMessageType {
 export interface BaseExtensionMessageData {
     type: ExtensionMessageType;
 }
-export declare type Breadcrumb = Record<"label" | "value", string>;
+export type Breadcrumb = Record<"label" | "value", string>;
 export interface BreadcrumbClickMessage extends BaseExtensionMessageData {
     breadcrumb: string;
 }

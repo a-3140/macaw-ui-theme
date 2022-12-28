@@ -1,5 +1,5 @@
 import React from "react";
-declare type AnchorFunction = {
+type AnchorFunction = {
     (el: HTMLDivElement): void;
     current: HTMLDivElement | null;
 };

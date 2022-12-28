@@ -1,6 +1,6 @@
 import { ButtonBaseTypeMap } from "@material-ui/core/ButtonBase";
 import React from "react";
-declare type BaseButtonProps<M = unknown> = M extends Object ? ButtonBaseTypeMap<M & {
+type BaseButtonProps<M = unknown> = M extends Object ? ButtonBaseTypeMap<M & {
     component: React.ElementType;
 }>["props"] : ButtonBaseTypeMap<{
     href?: string;

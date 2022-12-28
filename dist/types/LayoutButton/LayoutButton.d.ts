@@ -1,7 +1,7 @@
 import type { ButtonBaseProps } from "@material-ui/core/ButtonBase";
 import React from "react";
 import { UserInteraction } from "../../types/utils";
-export declare type LayoutButtonProps<T extends React.ElementType> = ButtonBaseProps<T, {
+export type LayoutButtonProps<T extends React.ElementType> = ButtonBaseProps<T, {
     component?: T;
 }> & {
     state?: UserInteraction;

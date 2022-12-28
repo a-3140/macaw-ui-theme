@@ -1,10 +1,10 @@
 import type { ReactNode } from "react";
-export declare type NotificationType = "info" | "success" | "error" | "warning";
+export type NotificationType = "info" | "success" | "error" | "warning";
 export interface NotificationAction {
     label: string;
     onClick: () => void;
 }
-export declare type ApiMessageData = {
+export type ApiMessageData = {
     apiMessageContent: ReactNode;
     showApiLabel: ReactNode;
     hideApiLabel: ReactNode;

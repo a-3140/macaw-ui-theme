@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonProps } from "../Button";
-export declare type ConfirmButtonTransitionState = "loading" | "success" | "error" | "default";
-export declare type ConfirmButtonLabels = Record<"confirm" | "error", string>;
+export type ConfirmButtonTransitionState = "loading" | "success" | "error" | "default";
+export type ConfirmButtonLabels = Record<"confirm" | "error", string>;
 export interface ConfirmButtonProps extends Omit<ButtonProps, "classes"> {
     labels: ConfirmButtonLabels;
     noTransition?: boolean;

@@ -1,2 +1,2 @@
-declare const useStyles: (props?: any) => import("@material-ui/styles").ClassNameMap<"primary" | "secondary" | "primaryDisabled" | "secondaryDisabled" | "tertiary" | "tertiaryDisabled">;
+declare const useStyles: (props?: any) => import("@material-ui/styles").ClassNameMap<"primary" | "secondary" | "buttonDefault" | "primaryDisabled" | "secondaryDisabled" | "tertiary" | "tertiaryDisabled" | "tertiaryErrorAndDisabled">;
 export default useStyles;

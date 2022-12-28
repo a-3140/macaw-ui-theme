@@ -5,7 +5,7 @@ export interface MenuItemCommonProps {
     isMenuShrunk: boolean;
     menuItem: SidebarMenuItem;
 }
-export declare type MenuItemProps = MenuItemCommonProps & ({
+export type MenuItemProps = MenuItemCommonProps & ({
     onClick: (menuItem: SidebarMenuItem) => void;
     linkComponent?: never;
 } | {

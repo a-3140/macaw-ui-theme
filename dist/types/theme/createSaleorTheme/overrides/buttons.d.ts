@@ -1,3 +1,3 @@
 import type { ThemeOptions } from "@material-ui/core/styles";
-import { SaleorThemeColors } from "../types";
-export declare const buttonOverrides: (colors: SaleorThemeColors) => ThemeOptions["overrides"];
+import { SaleorThemeColors, ThemeType } from "../types";
+export declare const buttonOverrides: (colors: SaleorThemeColors, mode: ThemeType) => ThemeOptions["overrides"];

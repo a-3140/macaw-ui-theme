@@ -5,7 +5,7 @@ export declare enum FilterType {
     Range = 2,
     Autocomplete = 3
 }
-export declare type Choice = Record<"label" | "value", string>;
+export type Choice = Record<"label" | "value", string>;
 export interface FilterDetailedOptions {
     type: FilterType;
     choices?: Choice[];
@@ -48,7 +48,7 @@ export interface FilterContextType {
     swap: (previousFilterName: string, nextFilterName: string) => void;
     onChange: (name: string, value: string | string[], opts?: OnFilterChangeOpts) => void;
 }
-export declare type FilterLabels = Record<"where" | "and" | "is" | "range", string>;
+export type FilterLabels = Record<"where" | "and" | "is" | "range", string>;
 export interface EventTarget<T = unknown> {
     name?: string;
     value: T;

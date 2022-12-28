@@ -1,13 +1,12 @@
-import { IconButtonTypeMap as MuiIconButtonTypeMap } from "@material-ui/core/IconButton";
-import { IconButtonProps as MuiIconButtonProps } from "@material-ui/core/IconButton";
+import { IconButtonProps as MuiIconButtonProps, IconButtonTypeMap as MuiIconButtonTypeMap } from "@material-ui/core/IconButton";
 import { OverrideProps } from "@material-ui/core/OverridableComponent";
 import React from "react";
 import { UserInteraction } from "../../types/utils";
-interface IconButtonInnerProps {
+export interface IconButtonInnerProps {
     error?: boolean;
     hoverOutline?: boolean;
     state?: UserInteraction;
-    variant?: "primary" | "secondary";
+    variant?: "primary" | "secondary" | "ghost";
 }
 export interface IconButtonTypeMap<P = {}, D extends React.ElementType = "button"> {
     props: Omit<MuiIconButtonTypeMap<P, D>["props"], "variant"> & IconButtonInnerProps & {
@@ -16,7 +15,7 @@ export interface IconButtonTypeMap<P = {}, D extends React.ElementType = "button
     defaultComponent: D;
     classKey: never;
 }
-export declare type IconButtonProps<T extends React.ElementType = "button"> = MuiIconButtonProps<T, {
+export type IconButtonProps<T extends React.ElementType = "button"> = MuiIconButtonProps<T, {
     component?: T;
 }> & IconButtonInnerProps & {
     href?: string;

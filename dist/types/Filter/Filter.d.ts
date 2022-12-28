@@ -1,6 +1,6 @@
 import React from "react";
 import { FilterDetailedOptions, FilterLabels, FilterOptions } from "./types";
-export declare type FilterProps = FilterOptions & FilterDetailedOptions;
+export type FilterProps = FilterOptions & FilterDetailedOptions;
 export declare const Filter: React.FC<FilterProps>;
 export interface FilterRowProps {
     first: boolean;

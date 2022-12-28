@@ -1,2 +1,2 @@
-declare const useStyles: (props?: any) => import("@material-ui/styles").ClassNameMap<"error" | "active" | "hover" | "primary" | "secondary" | "hoverOutline" | "disabledError">;
+declare const useStyles: (props?: any) => import("@material-ui/styles").ClassNameMap<"error" | "active" | "hover" | "primary" | "secondary" | "ghost" | "hoverOutline" | "disabledError">;
 export default useStyles;

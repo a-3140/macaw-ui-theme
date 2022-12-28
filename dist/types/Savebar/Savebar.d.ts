@@ -1,7 +1,7 @@
 import React from "react";
 import { ConfirmButtonLabels, ConfirmButtonTransitionState } from "../ConfirmButton";
-export declare type SavebarLabels = ConfirmButtonLabels & Record<"delete" | "cancel", string>;
-export declare type SavebarTooltips = Partial<Record<"confirm" | "delete" | "cancel", string>>;
+export type SavebarLabels = ConfirmButtonLabels & Record<"delete" | "cancel", string>;
+export type SavebarTooltips = Partial<Record<"confirm" | "delete" | "cancel", string>>;
 export interface SavebarProps {
     disabled: boolean;
     state: ConfirmButtonTransitionState;

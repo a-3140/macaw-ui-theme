@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export declare type ListActionContextType = (hover: boolean) => void;
+export type ListActionContextType = (hover: boolean) => void;
 export declare const ListActionContext: import("react").Context<ListActionContextType | undefined>;
 export declare const useListAction: () => ListActionContextType;
 export interface UseTableActionHover {

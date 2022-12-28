@@ -1,4 +1,4 @@
-export declare type StatusChipSize = "md" | "lg";
+export type StatusChipSize = "md" | "lg";
 export interface StatusChipProps {
     children?: null;
     className?: string;

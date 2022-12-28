@@ -9,7 +9,7 @@ export interface SidebarMenuItem {
     external?: boolean;
     onClick?: () => void;
 }
-export declare type CustomLinkComponent = React.ForwardRefExoticComponent<{
+export type CustomLinkComponent = React.ForwardRefExoticComponent<{
     href?: string;
     onClick?: (...params: any) => void;
     className?: string;

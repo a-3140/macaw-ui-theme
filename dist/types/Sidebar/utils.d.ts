@@ -9,4 +9,4 @@ export declare const getLinkProps: (menuItem: SidebarMenuItem) => {
     href?: undefined;
     target?: undefined;
 };
-export declare const getLinkComponent: (menuItem: SidebarMenuItem, customComponent?: CustomLinkComponent | undefined) => "a" | "button" | CustomLinkComponent;
+export declare const getLinkComponent: (menuItem: SidebarMenuItem, customComponent?: CustomLinkComponent) => "a" | "button" | CustomLinkComponent;

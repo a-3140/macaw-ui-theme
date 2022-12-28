@@ -1,7 +1,7 @@
 import { Side } from "@floating-ui/core";
 import { SaleorTheme } from "../theme";
 import { TooltipProps } from "./Tooltip";
-export declare type StyleProps = Pick<TooltipProps, "variant"> & {
+export type StyleProps = Pick<TooltipProps, "variant"> & {
     side: Side;
 };
 export declare const getBorderColor: (isDark: boolean) => (props: StyleProps) => string;

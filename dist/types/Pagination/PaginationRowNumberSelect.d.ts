@@ -1,5 +1,5 @@
 import React from "react";
-export declare type PaginationRowNumberSelectLabels = Record<"noOfRows", string>;
+export type PaginationRowNumberSelectLabels = Record<"noOfRows", string>;
 export interface PaginationRowNumberSelectProps {
     choices: number[];
     className?: string;

@@ -1,5 +1,5 @@
 import React from "react";
-export declare type FilterMenuLabels = Record<"header", string>;
+export type FilterMenuLabels = Record<"header", string>;
 export interface FilterMenuProps {
     anchorEl: HTMLElement | null;
     labels: FilterMenuLabels;
